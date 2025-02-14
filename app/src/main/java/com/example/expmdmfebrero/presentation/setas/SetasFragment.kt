@@ -11,9 +11,9 @@ import com.example.expmdmfebrero.R
 import com.example.expmdmfebrero.presentation.setas.adapter.SetasAdapter
 import kotlin.properties.Delegates
 
-class SetaListFragment: Fragment(R.layout.fragment_list_setas) {
+class SetasFragment : Fragment(R.layout.fragment_list_setas) {
 
-    private lateinit var viewModel: SetasViewModel
+    private lateinit var viewModel: SetaViewModel
     private lateinit var adapter: SetasAdapter
     private var albumId by Delegates.notNull<Int>()
 
@@ -27,10 +27,13 @@ class SetaListFragment: Fragment(R.layout.fragment_list_setas) {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
 
-        viewModel = ViewModelProvider(this).get(SetasViewModel::class.java)
+        // Obtener el ViewModel
+        viewModel = ViewModelProvider(this).get(SetaViewModel::class.java)
 
+        // Cargar las setas del álbum seleccionado
         viewModel.loadSetas(albumId)
 
+        // Observar los cambios en la lista de setas
         viewModel.binding.observe(viewLifecycleOwner, Observer { setas ->
             adapter.submitList(setas)
         })

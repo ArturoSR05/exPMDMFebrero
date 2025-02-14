@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.expmdmfebrero.databinding.SetaItemBinding
 import com.example.expmdmfebrero.domain.setas.Seta
 
-class SetasViewHolder (private val binding: SetaItemBinding): RecyclerView.ViewHolder(binding.root) {
+class SetasViewHolder(private val binding: SetaItemBinding): RecyclerView.ViewHolder(binding.root) {
 
     fun bind(seta: Seta) {
         binding.nombre.text = seta.nombre
@@ -14,8 +14,7 @@ class SetasViewHolder (private val binding: SetaItemBinding): RecyclerView.ViewH
 
     companion object {
         fun from(parent: ViewGroup): SetasViewHolder {
-            val binding =
-                SetaItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            val binding = SetaItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
             return SetasViewHolder(binding)
         }
     }

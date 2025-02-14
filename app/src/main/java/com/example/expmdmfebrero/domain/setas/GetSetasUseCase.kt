@@ -1,8 +1,8 @@
 package com.example.expmdmfebrero.domain.setas
 
-class GetSetasUseCase(private val repository: SetaRepository) {
+class GetSetasUseCase(private val setaRepository: SetaRepository) {
 
-    suspend operator fun invoke(albumId: Int): List<Seta> {
-        return repository.getSetasByAlbum(albumId)
+    suspend fun invoke(albumId: Int): List<Seta> {
+        return setaRepository.getSetasByAlbum(albumId)
     }
 }

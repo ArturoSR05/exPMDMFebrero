@@ -8,7 +8,7 @@ import com.example.expmdmfebrero.domain.setas.GetSetasUseCase
 import com.example.expmdmfebrero.domain.setas.Seta
 import kotlinx.coroutines.launch
 
-class SetasViewModel(private val getSetasUseCase: GetSetasUseCase): ViewModel() {
+class SetaViewModel (private val getSetasUseCase: GetSetasUseCase) : ViewModel() {
 
     private val _binding = MutableLiveData<List<Seta>>()
     val binding: LiveData<List<Seta>> = _binding
