@@ -1,10 +1,10 @@
-package com.example.expmdmfebrero.presentation.adapter
+package com.example.expmdmfebrero.presentation.album.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expmdmfebrero.databinding.AlbumItemBinding
-import com.example.expmdmfebrero.domain.Album
+import com.example.expmdmfebrero.domain.album.Album
 
 class AlbumViewHolder(private val binding: AlbumItemBinding): RecyclerView.ViewHolder(binding.root) {
 

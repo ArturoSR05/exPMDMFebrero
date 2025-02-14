@@ -1,10 +1,10 @@
-package com.example.expmdmfebrero.presentation
+package com.example.expmdmfebrero.presentation.album
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.expmdmfebrero.domain.Album
-import com.example.expmdmfebrero.domain.GetAlbumsUseCase
+import com.example.expmdmfebrero.domain.album.Album
+import com.example.expmdmfebrero.domain.album.GetAlbumsUseCase
 
 class AlbumViewModel(private val getAlbumsUseCase: GetAlbumsUseCase): ViewModel() {
 

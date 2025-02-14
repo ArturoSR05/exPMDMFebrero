@@ -1,4 +1,4 @@
-package com.example.expmdmfebrero.presentation
+package com.example.expmdmfebrero.presentation.album
 
 import android.os.Bundle
 import android.view.View
@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expmdmfebrero.R
 import com.example.expmdmfebrero.data.AlbumDataRepository
-import com.example.expmdmfebrero.domain.GetAlbumsUseCase
-import com.example.expmdmfebrero.presentation.adapter.AlbumAdapter
+import com.example.expmdmfebrero.domain.album.GetAlbumsUseCase
+import com.example.expmdmfebrero.presentation.album.adapter.AlbumAdapter
 
 class AlbumListFragment: Fragment(R.layout.fragment_list_album) {
 

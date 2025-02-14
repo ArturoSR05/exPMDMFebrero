@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.lifecycle.runtime)
     implementation(libs.kotlin.coroutines)
     implementation(libs.koin.android)
+    implementation(libs.androidx.recyclerview)
 
     testImplementation(libs.junit)
 

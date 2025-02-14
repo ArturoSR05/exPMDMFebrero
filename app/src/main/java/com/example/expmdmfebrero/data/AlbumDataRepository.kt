@@ -1,7 +1,7 @@
 package com.example.expmdmfebrero.data
 
-import com.example.expmdmfebrero.domain.Album
-import com.example.expmdmfebrero.domain.AlbumRepository
+import com.example.expmdmfebrero.domain.album.Album
+import com.example.expmdmfebrero.domain.album.AlbumRepository
 
 class AlbumDataRepository: AlbumRepository {
 
