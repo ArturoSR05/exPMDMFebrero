@@ -1,7 +1,7 @@
-package com.example.expmdmfebrero.presentation.adapter
+package com.example.expmdmfebrero.presentation.album.adapter
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.expmdmfebrero.domain.Album
+import com.example.expmdmfebrero.domain.album.Album
 
 class AlbumDiffUtil: DiffUtil.ItemCallback<Album>() {
     override fun areItemsTheSame(oldItem: Album, newItem: Album): Boolean {

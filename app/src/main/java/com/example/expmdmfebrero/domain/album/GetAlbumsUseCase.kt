@@ -1,4 +1,4 @@
-package com.example.expmdmfebrero.domain
+package com.example.expmdmfebrero.domain.album
 
 class GetAlbumsUseCase(private val repository: AlbumRepository) {
 
